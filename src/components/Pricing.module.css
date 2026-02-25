@@ -1,0 +1,150 @@
+.pricing {
+    background: var(--navy);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.planCard {
+    position: relative;
+    background: var(--navy-light);
+    border: 1px solid var(--white-10);
+    border-radius: var(--border-radius);
+    padding: 40px 28px 32px;
+    text-align: center;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.planCard:hover {
+    transform: translateY(-4px);
+    border-color: var(--white-20);
+}
+
+.highlighted {
+    border-color: var(--accent) !important;
+    background: linear-gradient(180deg, var(--accent-glow), var(--navy-light));
+    box-shadow: 0 0 30px var(--accent-glow);
+    transform: scale(1.03);
+}
+
+.highlighted:hover {
+    transform: scale(1.03) translateY(-4px);
+}
+
+.popularBadge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 20px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.planEmoji {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.planTier {
+    font-family: var(--font-heading-tc);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.planDesc {
+    font-size: 0.85rem;
+    color: var(--white-50);
+    margin-bottom: 24px;
+}
+
+.planPrice {
+    margin-bottom: 28px;
+}
+
+.priceAmount {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.priceSuffix {
+    font-size: 0.9rem;
+    color: var(--white-50);
+    margin-left: 4px;
+}
+
+.featureList {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 28px;
+    flex-grow: 1;
+}
+
+.featureItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: var(--white-70);
+    line-height: 1.5;
+}
+
+.checkmark {
+    color: var(--green);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.planBtn {
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footnote {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: var(--white-50);
+    line-height: 1.8;
+}
+
+.footnote a {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .highlighted {
+        transform: none;
+    }
+
+    .highlighted:hover {
+        transform: translateY(-4px);
+    }
+}
