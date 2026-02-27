@@ -27,7 +27,7 @@ const partners: Partner[] = [
     { name: '長實集團', file: '/images/partners/cheung-kong.svg' },
     { name: 'Milk Magazine', file: '/images/partners/milk-magazine.svg' },
     // 政府機構
-    { name: '康文署', file: '/images/partners/lcsd.svg' },
+    { name: '康文署', file: '/images/partners/lcsd.svg', hasBackground: true },
 ];
 
 export default function Partners() {
