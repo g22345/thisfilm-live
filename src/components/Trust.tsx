@@ -16,7 +16,6 @@ export default function Trust() {
                 <div className={styles.header}>
                     <span className="section-label">實力見證</span>
                     <h2 className="section-title">
-                        我們並非新手 —{' '}
                         <span className="highlight">有豐富直播經驗</span>
                     </h2>
                     <p className="section-subtitle" style={{ margin: '0 auto' }}>
