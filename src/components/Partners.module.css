@@ -15,7 +15,7 @@
     margin-top: 8px;
 }
 
-/* Logo Grid — auto-fit with max 7 columns */
+/* Logo Grid — flex wrap centered */
 .logoGrid {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@
     padding: 0 24px;
 }
 
-/* Base logo item */
+/* Base logo item — dark card with invert filter */
 .logoItem {
     display: flex;
     align-items: center;
@@ -49,7 +49,20 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* All logos — invert to white on dark bg */
+/* White card variant for logos with backgrounds */
+.logoItemBg {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(255, 255, 255, 0.3);
+    opacity: 0.75;
+}
+
+.logoItemBg:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.98);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* SVG logos — invert to white on dark bg */
 .logoImg {
     max-height: 34px;
     width: auto;
@@ -59,8 +72,14 @@
     transition: var(--transition);
 }
 
-.logoItem:hover .logoImg {
-    filter: brightness(0) invert(1);
+/* Background logos — show original colors on white card */
+.logoImgBg {
+    max-height: 34px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: none;
+    transition: var(--transition);
 }
 
 /* "More partners" text below grid */
@@ -84,7 +103,8 @@
         width: 100px;
     }
 
-    .logoImg {
+    .logoImg,
+    .logoImgBg {
         max-height: 26px;
     }
 }
@@ -96,7 +116,8 @@
         width: 90px;
     }
 
-    .logoImg {
+    .logoImg,
+    .logoImgBg {
         max-height: 22px;
     }
 
