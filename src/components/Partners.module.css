@@ -35,8 +35,8 @@
     border: 1px solid var(--white-05);
     border-radius: var(--border-radius-sm);
     transition: var(--transition);
-    min-height: 68px;
-    opacity: 0.45;
+    min-height: 72px;
+    opacity: 0.7;
 }
 
 .logoItem:hover {
@@ -49,42 +49,37 @@
 
 /* Logos WITH transparent bg (SVG) — invert to white */
 .logoImg {
-    max-height: 28px;
+    max-height: 34px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    filter: brightness(0) invert(1) opacity(0.7);
+    filter: brightness(0) invert(1);
     transition: var(--transition);
 }
 
 .logoItem:hover .logoImg {
-    filter: brightness(0) invert(1) opacity(1);
+    filter: brightness(0) invert(1);
 }
 
-/* Logos WITHOUT transparent bg (PNG/JPG/GIF) — show in rounded container */
+/* Logos WITHOUT transparent bg (PNG/JPG/GIF) — show original in bright container */
 .logoItemBg {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid var(--white-10);
-    padding: 12px;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid var(--white-20);
+    padding: 10px;
+    opacity: 0.6;
 }
 
 .logoItemBg:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
 }
 
 .logoImgBg {
-    max-height: 36px;
+    max-height: 40px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    border-radius: 4px;
     transition: var(--transition);
-    opacity: 0.8;
-}
-
-.logoItemBg:hover .logoImgBg {
-    opacity: 1;
 }
 
 /* Responsive */
@@ -104,11 +99,11 @@
     }
 
     .logoImg {
-        max-height: 22px;
+        max-height: 24px;
     }
 
     .logoImgBg {
-        max-height: 28px;
+        max-height: 30px;
     }
 }
 
@@ -128,6 +123,6 @@
     }
 
     .logoImgBg {
-        max-height: 24px;
+        max-height: 26px;
     }
 }
