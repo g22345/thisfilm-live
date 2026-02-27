@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './PainPoints.module.css';
-import { IconCrowd, IconPhoneOff, IconClipboard, IconFilm } from './Icons';
+import { IconCrowd, IconPhoneOff, IconClapperboard, IconFilm } from './Icons';
 
 const painPoints = [
     {
@@ -15,9 +15,9 @@ const painPoints = [
         description: '以手機搭配三腳架的方式進行直播，容易出現斷線、畫質模糊、收音不清等問題。禮堂光線昏暗更令效果大打折扣。',
     },
     {
-        icon: <IconClipboard size={28} />,
-        title: '校方統籌壓力大',
-        description: '畢業禮涉及場地佈置、音響燈光、攝影錄影、直播技術等多個環節。校方需自行協調不同供應商，耗時費神且容易出錯。',
+        icon: <IconClapperboard size={28} />,
+        title: '重要時刻不可重來',
+        description: '畢業禮只有一次機會。如果直播當日出現技術故障、斷線或收音問題，無法補救——家長的失望與學校的信譽都無法挽回。',
     },
     {
         icon: <IconFilm size={28} />,
