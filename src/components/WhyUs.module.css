@@ -89,7 +89,7 @@
 @media (max-width: 768px) {
     .layout {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 28px;
     }
 
     .imageSide {
@@ -98,5 +98,25 @@
 
     .textSide {
         order: 2;
+    }
+
+    .featureGrid {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .feature {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .featureIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .featureDesc {
+        font-size: 0.85rem;
+        line-height: 1.6;
     }
 }

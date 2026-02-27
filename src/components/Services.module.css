@@ -86,7 +86,20 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        margin-bottom: 32px;
+    }
+
     .columns {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .columnHeader {
+        padding: 18px 20px;
+    }
+
+    .eventItem {
+        padding: 12px 20px;
     }
 }

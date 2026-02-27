@@ -271,11 +271,15 @@ img {
 /* --- Responsive --- */
 @media (max-width: 768px) {
   :root {
-    --section-padding: 64px 0;
+    --section-padding: 48px 0;
   }
 
   .section-title {
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+
+  .section-label {
+    font-size: 0.8rem;
   }
 
   .btn {
@@ -286,5 +290,17 @@ img {
   .btn-cta {
     padding: 14px 28px;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 36px 0;
+    --container-padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 7.5vw, 2rem);
+    margin-bottom: 14px;
   }
 }

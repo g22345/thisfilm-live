@@ -68,8 +68,20 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        margin-bottom: 32px;
+    }
+
     .timeline {
         flex-direction: column;
-        gap: 16px;
+        gap: 12px;
+    }
+
+    .stepContent {
+        padding: 24px 18px;
+    }
+
+    .stepNum {
+        margin-bottom: 12px;
     }
 }

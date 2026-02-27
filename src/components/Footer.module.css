@@ -92,11 +92,11 @@
     }
 
     .footer {
-        padding-bottom: 80px;
+        padding: 36px 0 80px;
     }
 
     .footerGrid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 24px;
     }
 }
