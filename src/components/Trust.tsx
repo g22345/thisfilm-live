@@ -17,7 +17,7 @@ export default function Trust() {
                     <span className="section-label">實力見證</span>
                     <h2 className="section-title">
                         我們並非新手 —{' '}
-                        <span className="highlight">已擁有豐富實戰經驗</span>
+                        <span className="highlight">有豐富直播經驗</span>
                     </h2>
                     <p className="section-subtitle" style={{ margin: '0 auto' }}>
                         從體育總會到學界賽事，我們的直播團隊已累積大量實戰經驗，深得合作夥伴信賴。
