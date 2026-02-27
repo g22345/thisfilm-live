@@ -3,18 +3,9 @@
 import Image from 'next/image';
 import styles from './Partners.module.css';
 
-/* 合作夥伴 Logo 雲
-   SVGs use brightness(0) invert(1) for white on dark bg.
-   Logos with backgrounds use white card containers. */
+/* 合作夥伴 Logo 雲 — 全部原色 logo 喺白色卡片上 */
 
-interface Partner {
-    name: string;
-    file: string;
-    hasBackground?: boolean;
-}
-
-const partners: Partner[] = [
-    // Row 1: 國際品牌 (all clean SVGs)
+const partners = [
     { name: 'Nike', file: '/images/partners/nike.svg' },
     { name: 'Adidas', file: '/images/partners/adidas.svg' },
     { name: 'Louis Vuitton', file: '/images/partners/louis-vuitton.svg' },
@@ -22,12 +13,10 @@ const partners: Partner[] = [
     { name: 'Audi', file: '/images/partners/audi.svg' },
     { name: 'Toyota', file: '/images/partners/toyota.svg' },
     { name: 'Subaru Asia', file: '/images/partners/subaru.svg' },
-    // Row 2: 本地品牌
-    { name: '屈臣氏', file: '/images/partners/watsons.svg', hasBackground: true },
+    { name: '屈臣氏', file: '/images/partners/watsons.svg' },
     { name: '長實集團', file: '/images/partners/cheung-kong.svg' },
     { name: 'Milk Magazine', file: '/images/partners/milk-magazine.svg' },
-    // 政府機構
-    { name: '康文署', file: '/images/partners/lcsd.svg', hasBackground: true },
+    { name: '康文署', file: '/images/partners/lcsd.svg' },
 ];
 
 export default function Partners() {
@@ -48,7 +37,7 @@ export default function Partners() {
                     {partners.map((partner, i) => (
                         <div
                             key={i}
-                            className={`${styles.logoItem} ${partner.hasBackground ? styles.logoItemBg : ''} fade-in fade-in-delay-${(i % 4) + 1}`}
+                            className={`${styles.logoItem} fade-in fade-in-delay-${(i % 4) + 1}`}
                             title={partner.name}
                         >
                             <Image
@@ -56,7 +45,7 @@ export default function Partners() {
                                 alt={partner.name}
                                 width={120}
                                 height={40}
-                                className={partner.hasBackground ? styles.logoImgBg : styles.logoImg}
+                                className={styles.logoImg}
                                 unoptimized
                             />
                         </div>
