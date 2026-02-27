@@ -19,6 +19,8 @@ const partners = [
     // Row 2: 本地品牌 (clean SVGs only)
     { name: '長實集團', file: '/images/partners/cheung-kong.svg' },
     { name: 'Milk Magazine', file: '/images/partners/milk-magazine.svg' },
+    // 政府機構 (SVG with fills changed to black for invert)
+    { name: '康文署', file: '/images/partners/lcsd.svg' },
 ];
 
 export default function Partners() {
@@ -55,7 +57,7 @@ export default function Partners() {
                 </div>
 
                 <p className={styles.morePartners}>
-                    以及屈臣氏、Hong Kong Hockey、康文署、地政總署、新聞處等多個政府及機構
+                    以及屈臣氏、Hong Kong Hockey、地政總署、新聞處等多個政府及機構
                 </p>
             </div>
         </section>
