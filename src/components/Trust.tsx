@@ -46,8 +46,9 @@ export default function Trust() {
 
                 <div className={styles.ctaWrap}>
                     <p className={styles.ctaText}>如欲了解我們如何為貴校度身訂造直播方案，歡迎聯繫。</p>
+                    <p className={styles.urgency}>2025 畢業禮檔期快將額滿，立即查詢預約</p>
                     <a
-                        href="https://wa.me/85200000000?text=你好，我想查詢學校直播服務"
+                        href="https://wa.me/85200000000?text=你好，我想查詢畢業禮直播服務"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-cta"

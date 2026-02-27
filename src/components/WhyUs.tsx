@@ -8,22 +8,22 @@ const features = [
     {
         icon: <IconCamera size={24} />,
         title: '專業多機位攝製',
-        description: '採用廣播級攝影設備，多角度全方位覆蓋，確保每個精彩瞬間都不會遺漏。',
+        description: '採用廣播級攝影設備，多角度全方位覆蓋。畢業禮台上頒獎、台下家長反應、全景場面 — 每個珍貴瞬間都不會遺漏。',
     },
     {
         icon: <IconSignal size={24} />,
         title: 'LiveU 獨立網絡',
-        description: '無需佔用學校 WiFi 資源。我們自帶 4G/5G bonding 設備，全程使用獨立流動網絡。',
+        description: '無需佔用學校 WiFi 資源。我們自帶 4G/5G bonding 設備，禮堂內亦能穩定直播。',
     },
     {
         icon: <IconReplay size={24} />,
-        title: '即時慢鏡回放',
-        description: '精彩時刻即時重播，搭配專業計分板圖層，為觀眾提供媲美電視賽事般的觀看體驗。',
+        title: '即時精彩回放',
+        description: '學生上台一刻即時重播，搭配學校校徽及典禮資訊圖層，為觀眾提供專業觀看體驗。',
     },
     {
         icon: <IconScissors size={24} />,
         title: '精華片段剪輯',
-        description: '直播結束後提供精華剪輯，學校可即時用於招生宣傳、社交媒體及校內存檔。',
+        description: '直播結束後提供精華剪輯，學校可即時用於招生宣傳、社交媒體及校內存檔。每位畢業生都能獲得屬於自己的畢業回憶。',
     },
 ];
 

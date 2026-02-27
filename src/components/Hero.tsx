@@ -10,23 +10,23 @@ export default function Hero() {
 
             <div className={`container ${styles.content}`}>
                 <div className={styles.tagline}>
-                    已服務超過 20 個香港體育總會
+                    已服務超過 20 個香港體育總會及學校
                 </div>
 
                 <h1 className={styles.headline}>
-                    今年運動會，<br />
+                    今年畢業禮，<br />
                     <span className={styles.accentText}>多少家長無法到場？</span>
                 </h1>
 
                 <p className={styles.subheadline}>
-                    專業多機位直播，讓每位家長及海外親屬都能即時參與。
+                    專業多機位直播，讓每位家長及海外親屬都能即時見證子女的重要時刻。
                     <br />
                     學校零負擔 — 我們全程負責。
                 </p>
 
                 <div className={styles.ctas}>
                     <a
-                        href="https://wa.me/85200000000?text=你好，我想查詢學校直播服務"
+                        href="https://wa.me/85200000000?text=你好，我想查詢畢業禮直播服務"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary"

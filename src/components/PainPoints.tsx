@@ -6,23 +6,23 @@ import { IconCrowd, IconPhoneOff, IconGlobe, IconFilm } from './Icons';
 const painPoints = [
     {
         icon: <IconCrowd size={28} />,
-        title: '家長無法到場觀看',
-        description: '場地容量有限，運動會期間家長只能在場外等候。並非不願入場，而是根本沒有足夠位置。',
+        title: '家長無法到場觀禮',
+        description: '畢業禮座位有限，每位學生只獲派數張入場券。祖父母、海外親屬、甚至部份家長都未能出席子女人生中的重要時刻。',
     },
     {
         icon: <IconPhoneOff size={28} />,
         title: '自行直播效果不理想',
-        description: '以手機搭配三腳架的方式進行直播，容易出現斷線、畫質模糊、收音不清等問題，反而引起家長不滿。',
+        description: '以手機搭配三腳架的方式進行直播，容易出現斷線、畫質模糊、收音不清等問題。禮堂光線昏暗更令效果大打折扣。',
     },
     {
         icon: <IconGlobe size={28} />,
         title: '海外家長無法參與',
-        description: '移民潮後，越來越多家長身處海外。子女的畢業禮、運動會等重要時刻，他們只能缺席。',
+        description: '移民潮後，越來越多家長身處海外。子女的畢業禮、頒獎典禮等重要時刻，他們只能靠事後相片回顧。',
     },
     {
         icon: <IconFilm size={28} />,
-        title: '缺乏專業宣傳素材',
-        description: '活動結束後沒有留下專業影像記錄，無法用於招生宣傳、校史存檔或社交媒體推廣。',
+        title: '缺乏專業畢業禮影像記錄',
+        description: '畢業禮一年只有一次，沒有專業影像記錄，無法用於招生宣傳、校史存檔或社交媒體推廣。學生和家長也失去了珍貴回憶。',
     },
 ];
 
