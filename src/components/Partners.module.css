@@ -1,0 +1,98 @@
+.partners {
+    background: var(--navy);
+    padding: 60px 0 40px;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: var(--white-50);
+    margin-top: 8px;
+}
+
+/* Logo Grid — 7 columns for top row, wrap naturally */
+.logoGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.logoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 12px;
+    background: var(--navy-light);
+    border: 1px solid var(--white-05);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+    min-height: 68px;
+    opacity: 0.45;
+}
+
+.logoItem:hover {
+    opacity: 1;
+    border-color: var(--white-20);
+    background: var(--navy-mid);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* SVG/image logos — invert to white for dark bg */
+.logoImg {
+    max-height: 28px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1) opacity(0.7);
+    transition: var(--transition);
+}
+
+.logoItem:hover .logoImg {
+    filter: brightness(0) invert(1) opacity(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .partners {
+        padding: 48px 0 32px;
+    }
+
+    .logoGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .logoItem {
+        padding: 14px 8px;
+        min-height: 52px;
+    }
+
+    .logoImg {
+        max-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .logoItem {
+        padding: 12px 6px;
+        min-height: 46px;
+    }
+
+    .logoImg {
+        max-height: 20px;
+    }
+}

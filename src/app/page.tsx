@@ -7,6 +7,7 @@ import Services from '@/components/Services';
 import WhyUs from '@/components/WhyUs';
 import Process from '@/components/Process';
 import Pricing from '@/components/Pricing';
+import Partners from '@/components/Partners';
 import Trust from '@/components/Trust';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
@@ -45,6 +46,8 @@ export default function Home() {
       <Process />
       <div className="section-divider" />
       <Pricing />
+      <div className="section-divider" />
+      <Partners />
       <div className="section-divider" />
       <Trust />
       <div className="section-divider" />
