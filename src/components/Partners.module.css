@@ -15,10 +15,11 @@
     margin-top: 8px;
 }
 
-/* Logo Grid — 7 columns */
+/* Logo Grid — auto-fit with max 7 columns */
 .logoGrid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
     max-width: 960px;
     margin: 0 auto;
@@ -30,12 +31,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 12px;
+    padding: 20px 16px;
     background: var(--navy-light);
     border: 1px solid var(--white-05);
     border-radius: var(--border-radius-sm);
     transition: var(--transition);
     min-height: 72px;
+    width: 120px;
     opacity: 0.7;
 }
 
@@ -47,7 +49,7 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Logos WITH transparent bg (SVG) — invert to white */
+/* All logos — invert to white on dark bg */
 .logoImg {
     max-height: 34px;
     width: auto;
@@ -61,25 +63,13 @@
     filter: brightness(0) invert(1);
 }
 
-/* Logos WITHOUT transparent bg (PNG/JPG/GIF) — show original in bright container */
-.logoItemBg {
-    background: rgba(255, 255, 255, 0.92);
-    border: 1px solid var(--white-20);
-    padding: 10px;
-    opacity: 0.6;
-}
-
-.logoItemBg:hover {
-    background: rgba(255, 255, 255, 1);
-    opacity: 1;
-}
-
-.logoImgBg {
-    max-height: 40px;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    transition: var(--transition);
+/* "More partners" text below grid */
+.morePartners {
+    text-align: center;
+    color: var(--white-30);
+    font-size: 0.85rem;
+    margin-top: 24px;
+    letter-spacing: 0.02em;
 }
 
 /* Responsive */
@@ -88,41 +78,29 @@
         padding: 48px 0 32px;
     }
 
-    .logoGrid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 8px;
-    }
-
     .logoItem {
-        padding: 14px 8px;
-        min-height: 52px;
+        padding: 14px 12px;
+        min-height: 56px;
+        width: 100px;
     }
 
     .logoImg {
-        max-height: 24px;
-    }
-
-    .logoImgBg {
-        max-height: 30px;
+        max-height: 26px;
     }
 }
 
 @media (max-width: 480px) {
-    .logoGrid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6px;
-    }
-
     .logoItem {
-        padding: 12px 6px;
-        min-height: 46px;
+        padding: 12px 10px;
+        min-height: 50px;
+        width: 90px;
     }
 
     .logoImg {
-        max-height: 20px;
+        max-height: 22px;
     }
 
-    .logoImgBg {
-        max-height: 26px;
+    .morePartners {
+        font-size: 0.78rem;
     }
 }
