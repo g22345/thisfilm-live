@@ -3,18 +3,18 @@
 import Image from 'next/image';
 import styles from './Partners.module.css';
 
-/* 合作夥伴 Logo 雲 — 全部使用真實 logo 檔案
-   - svg logos: use invert filter for white-on-dark
-   - png/jpg/gif logos with backgrounds: use rounded container, no invert */
+/* 合作夥伴 Logo 雲
+   All SVGs use brightness(0) invert(1) to appear white on dark bg.
+   PNG/JPG with solid backgrounds get a white card container. */
 
 interface Partner {
     name: string;
     file: string;
-    hasBackground?: boolean; // true = non-transparent, skip invert filter
+    hasBackground?: boolean; // true for non-transparent raster images
 }
 
 const partners: Partner[] = [
-    // 國際品牌 (all SVG, transparent)
+    // 國際品牌 (SVG, transparent)
     { name: 'Nike', file: '/images/partners/nike.svg' },
     { name: 'Adidas', file: '/images/partners/adidas.svg' },
     { name: 'Louis Vuitton', file: '/images/partners/louis-vuitton.svg' },
@@ -22,16 +22,16 @@ const partners: Partner[] = [
     { name: 'Audi', file: '/images/partners/audi.svg' },
     { name: 'Toyota', file: '/images/partners/toyota.svg' },
     { name: 'Subaru Asia', file: '/images/partners/subaru.svg' },
-    // 本地品牌
+    // 本地品牌 (SVG, transparent)
     { name: '屈臣氏', file: '/images/partners/watsons.svg' },
     { name: '長實集團', file: '/images/partners/cheung-kong.svg' },
     { name: 'Milk Magazine', file: '/images/partners/milk-magazine.svg' },
     // 體育 (PNG with background)
     { name: 'Hong Kong Hockey', file: '/images/partners/hk-hockey.png', hasBackground: true },
-    // 政府機構 (mixed formats, some with backgrounds)
-    { name: '康文署', file: '/images/partners/lcsd.png', hasBackground: true },
+    // 政府機構
+    { name: '康文署', file: '/images/partners/lcsd.svg' },
     { name: '地政總署', file: '/images/partners/lands-dept.svg' },
-    { name: '新聞處', file: '/images/partners/isd-hk.jpg', hasBackground: true },
+    { name: '新聞處', file: '/images/partners/gis-hk.gif', hasBackground: true },
 ];
 
 export default function Partners() {
