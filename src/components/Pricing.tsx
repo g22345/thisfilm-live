@@ -1,11 +1,12 @@
 'use client';
 
 import styles from './Pricing.module.css';
+import { IconShieldBasic, IconStar, IconCrown } from './Icons';
 
 const plans = [
     {
         tier: '基本直播',
-        emoji: '🥉',
+        icon: <IconShieldBasic size={32} />,
         price: 'HK$5,000',
         priceSuffix: '起',
         description: '入門之選',
@@ -19,7 +20,7 @@ const plans = [
     },
     {
         tier: '標準直播',
-        emoji: '🥈',
+        icon: <IconStar size={32} />,
         price: 'HK$12,000',
         priceSuffix: '起',
         description: '最受歡迎',
@@ -34,7 +35,7 @@ const plans = [
     },
     {
         tier: '年度合約',
-        emoji: '👑',
+        icon: <IconCrown size={32} />,
         price: 'HK$35,000',
         priceSuffix: '起 / 年',
         description: '全年無憂',
@@ -72,7 +73,7 @@ export default function Pricing() {
                             {plan.highlight && (
                                 <div className={styles.popularBadge}>最受歡迎</div>
                             )}
-                            <div className={styles.planEmoji}>{plan.emoji}</div>
+                            <div className={styles.planEmoji}>{plan.icon}</div>
                             <h3 className={styles.planTier}>{plan.tier}</h3>
                             <p className={styles.planDesc}>{plan.description}</p>
                             <div className={styles.planPrice}>

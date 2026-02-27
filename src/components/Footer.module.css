@@ -57,6 +57,11 @@
     color: var(--accent);
 }
 
+.linkList a svg {
+    vertical-align: -2px;
+    margin-right: 6px;
+}
+
 .bottom {
     border-top: 1px solid var(--white-10);
     padding: 24px 0;

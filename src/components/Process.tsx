@@ -1,23 +1,24 @@
 'use client';
 
 import styles from './Process.module.css';
+import { IconPhone, IconClipboard, IconClapperboard } from './Icons';
 
 const steps = [
     {
         num: '01',
-        icon: '📞',
+        icon: <IconPhone size={24} />,
         title: '聯繫我們了解需求',
         description: '告知活動類型、日期及場地等基本資訊，我們將於 24 小時內回覆。',
     },
     {
         num: '02',
-        icon: '📋',
+        icon: <IconClipboard size={24} />,
         title: '度身訂造直播方案',
         description: '根據活動規模及場地環境，為學校建議最合適的機位配置及設備方案。',
     },
     {
         num: '03',
-        icon: '🎬',
+        icon: <IconClapperboard size={24} />,
         title: '活動當日全程負責',
         description: '專業團隊到場架設、測試及直播，學校無需額外安排，全程由我們處理。',
     },

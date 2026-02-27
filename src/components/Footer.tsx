@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './Footer.module.css';
+import { IconSmartphone, IconMail, IconWebsite } from './Icons';
 
 export default function Footer() {
     return (
@@ -50,12 +51,12 @@ export default function Footer() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        📱 WhatsApp
+                                        <IconSmartphone size={16} /> WhatsApp
                                     </a>
                                 </li>
                                 <li>
                                     <a href="mailto:info@thisfilmproduction.com">
-                                        ✉️ info@thisfilmproduction.com
+                                        <IconMail size={16} /> info@thisfilmproduction.com
                                     </a>
                                 </li>
                                 <li>
@@ -64,7 +65,7 @@ export default function Footer() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        🌐 thisfilmproduction.com
+                                        <IconWebsite size={16} /> thisfilmproduction.com
                                     </a>
                                 </li>
                             </ul>

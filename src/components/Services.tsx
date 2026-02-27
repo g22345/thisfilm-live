@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './Services.module.css';
+import { IconRunning, IconGradCap } from './Icons';
 
 const sportsEvents = [
     { name: '陸運會', season: '10–4 月', hot: true },
@@ -35,7 +36,7 @@ export default function Services() {
                 <div className={styles.columns}>
                     <div className={styles.column}>
                         <div className={styles.columnHeader}>
-                            <span className={styles.columnIcon}>🏃</span>
+                            <span className={styles.columnIcon}><IconRunning size={24} /></span>
                             <h3 className={styles.columnTitle}>體育類活動</h3>
                         </div>
                         <div className={styles.eventList}>
@@ -53,7 +54,7 @@ export default function Services() {
 
                     <div className={styles.column}>
                         <div className={styles.columnHeader}>
-                            <span className={styles.columnIcon}>🎓</span>
+                            <span className={styles.columnIcon}><IconGradCap size={24} /></span>
                             <h3 className={styles.columnTitle}>非體育類活動</h3>
                         </div>
                         <div className={styles.eventList}>
