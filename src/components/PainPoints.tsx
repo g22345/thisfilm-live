@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './PainPoints.module.css';
-import { IconCrowd, IconPhoneOff, IconGlobe, IconFilm } from './Icons';
+import { IconCrowd, IconPhoneOff, IconClipboard, IconFilm } from './Icons';
 
 const painPoints = [
     {
@@ -15,9 +15,9 @@ const painPoints = [
         description: '以手機搭配三腳架的方式進行直播，容易出現斷線、畫質模糊、收音不清等問題。禮堂光線昏暗更令效果大打折扣。',
     },
     {
-        icon: <IconGlobe size={28} />,
-        title: '海外家長無法參與',
-        description: '移民潮後，越來越多家長身處海外。子女的畢業禮、頒獎典禮等重要時刻，他們只能靠事後相片回顧。',
+        icon: <IconClipboard size={28} />,
+        title: '校方統籌壓力大',
+        description: '畢業禮涉及場地佈置、音響燈光、攝影錄影、直播技術等多個環節。校方需自行協調不同供應商，耗時費神且容易出錯。',
     },
     {
         icon: <IconFilm size={28} />,
