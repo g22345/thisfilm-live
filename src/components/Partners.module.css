@@ -15,7 +15,7 @@
     margin-top: 8px;
 }
 
-/* Logo Grid — 7 columns for top row, wrap naturally */
+/* Logo Grid — 7 columns */
 .logoGrid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -25,6 +25,7 @@
     padding: 0 24px;
 }
 
+/* Base logo item */
 .logoItem {
     display: flex;
     align-items: center;
@@ -46,7 +47,7 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* SVG/image logos — invert to white for dark bg */
+/* Logos WITH transparent bg (SVG) — invert to white */
 .logoImg {
     max-height: 28px;
     width: auto;
@@ -58,6 +59,32 @@
 
 .logoItem:hover .logoImg {
     filter: brightness(0) invert(1) opacity(1);
+}
+
+/* Logos WITHOUT transparent bg (PNG/JPG/GIF) — show in rounded container */
+.logoItemBg {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--white-10);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.logoItemBg:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.logoImgBg {
+    max-height: 36px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: var(--transition);
+    opacity: 0.8;
+}
+
+.logoItemBg:hover .logoImgBg {
+    opacity: 1;
 }
 
 /* Responsive */
@@ -79,6 +106,10 @@
     .logoImg {
         max-height: 22px;
     }
+
+    .logoImgBg {
+        max-height: 28px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -94,5 +125,9 @@
 
     .logoImg {
         max-height: 20px;
+    }
+
+    .logoImgBg {
+        max-height: 24px;
     }
 }
