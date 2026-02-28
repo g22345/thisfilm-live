@@ -26,7 +26,7 @@ export default function FooterEn() {
                 <div className="container">
                     <div className={styles.footerGrid}>
                         <div className={styles.brand}>
-                            <h3 className={styles.brandName}>This Film Production</h3>
+                            <h3 className={styles.brandName}>THISFILM LIVE PRODUCTION</h3>
                             <p className={styles.brandDesc}>
                                 Professional school event livestream crew — delivering high-quality broadcasts for graduations, sports days, and more.
                             </p>
@@ -73,7 +73,7 @@ export default function FooterEn() {
                     </div>
 
                     <div className={styles.bottom}>
-                        <p>&copy; {new Date().getFullYear()} This Film Production. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} THISFILM LIVE PRODUCTION. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

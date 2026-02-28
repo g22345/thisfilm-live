@@ -3,15 +3,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | This Film Production",
-    default: "This Film Production | 專業商業攝影及直播服務",
+    template: "%s | THISFILM LIVE PRODUCTION",
+    default: "THISFILM LIVE PRODUCTION | 專業商業攝影及直播服務",
   },
   description:
-    "This Film Production 提供專業商業攝影、活動直播、企業拍攝服務。服務超過 20 個機構及學校。",
+    "THISFILM LIVE PRODUCTION 提供專業商業攝影、活動直播、企業拍攝服務。服務超過 20 個機構及學校。",
   openGraph: {
     type: "website",
     locale: "zh_HK",
-    siteName: "This Film Production",
+    siteName: "THISFILM LIVE PRODUCTION",
   },
 };
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "School Graduation Livestream | Professional Multi-Camera | This Film Production",
+    title: "School Graduation Livestream | Professional Multi-Camera | THISFILM LIVE PRODUCTION",
     description:
         "Professional multi-camera livestream services for Hong Kong schools — graduations, sports days, concerts, and ceremonies. LiveU independent network, instant replay, highlight reels. Trusted by 20+ sports federations and schools. 2025 graduation slots now open.",
     keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         "學校直播",
     ],
     openGraph: {
-        title: "School Graduation Livestream | This Film Production",
+        title: "School Graduation Livestream | THISFILM LIVE PRODUCTION",
         description:
             "Professional multi-camera livestream for Hong Kong schools. 2025 graduation slots now open.",
         type: "website",

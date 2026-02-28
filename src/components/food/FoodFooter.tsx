@@ -8,7 +8,7 @@ export default function FoodFooter() {
             <div className="container">
                 <div className={styles.footerGrid}>
                     <div className={styles.brand}>
-                        <h3 className={styles.brandName}>This Film Production</h3>
+                        <h3 className={styles.brandName}>THISFILM LIVE PRODUCTION</h3>
                         <p className={styles.brandDesc}>
                             專業美食攝影服務，為餐廳、咖啡店及食品品牌打造令人垂涎的視覺內容。
                         </p>
@@ -55,7 +55,7 @@ export default function FoodFooter() {
                 </div>
 
                 <div className={styles.bottom}>
-                    <p>&copy; {new Date().getFullYear()} This Film Production. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} THISFILM LIVE PRODUCTION. All rights reserved.</p>
                 </div>
             </div>
         </footer>

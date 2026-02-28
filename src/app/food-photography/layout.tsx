@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "專業食物影像提升 | 24 小時交付 | This Film Production",
+    title: "專業食物影像提升 | 24 小時交付 | THISFILM LIVE PRODUCTION",
     description:
         "專業食物影像提升服務 — WhatsApp 傳照片，24 小時交付。無需到 Studio、無需等一星期。由 $480 起，效果不遜傳統攝影。免費試做 1 張。",
     keywords: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         "香港",
     ],
     openGraph: {
-        title: "專業食物影像提升 | This Film Production",
+        title: "專業食物影像提升 | THISFILM LIVE PRODUCTION",
         description:
             "WhatsApp 傳照片，24 小時交付。專業食物影像提升由 $480 起。免費試做 1 張。",
         type: "website",
