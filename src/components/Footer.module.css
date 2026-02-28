@@ -51,6 +51,10 @@
     font-size: 0.9rem;
     color: var(--white-50);
     transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    word-break: break-all;
 }
 
 .linkList a:hover {
@@ -58,8 +62,7 @@
 }
 
 .linkList a svg {
-    vertical-align: -2px;
-    margin-right: 6px;
+    flex-shrink: 0;
 }
 
 .bottom {

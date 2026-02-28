@@ -1,0 +1,55 @@
+.bar {
+    background: linear-gradient(135deg, rgba(0, 188, 212, 0.08), rgba(0, 188, 212, 0.03));
+    border-top: 1px solid rgba(0, 188, 212, 0.15);
+    border-bottom: 1px solid rgba(0, 188, 212, 0.15);
+    padding: 14px 0;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+}
+
+.badge strong {
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+.icon {
+    flex-shrink: 0;
+    color: #00bcd4;
+}
+
+.divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+    .inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .divider {
+        width: 40px;
+        height: 1px;
+    }
+
+    .badge {
+        font-size: 0.85rem;
+    }
+}

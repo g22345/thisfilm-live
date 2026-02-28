@@ -4,159 +4,246 @@
 
 .header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1000px;
+/* ─── Desktop Table ─── */
+.tableWrap {
+    max-width: 720px;
     margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 16px;
 }
 
-.planCard {
-    position: relative;
-    background: var(--navy-light);
-    border: 1px solid var(--white-10);
-    border-radius: var(--border-radius);
-    padding: 40px 28px 32px;
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.95rem;
+}
+
+/* Header row */
+.featureHeader {
+    width: 35%;
+}
+
+.tierHeader {
+    width: 21.67%;
     text-align: center;
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
+    padding: 20px 12px 16px;
+    vertical-align: bottom;
+    position: relative;
+    overflow: visible;
 }
 
-.planCard:hover {
-    transform: translateY(-4px);
-    border-color: var(--white-20);
+.tierHighlight {
+    background: var(--accent-glow);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    position: relative;
 }
 
-.highlighted {
-    border-color: var(--accent) !important;
-    background: linear-gradient(180deg, var(--accent-glow), var(--navy-light));
-    box-shadow: 0 0 30px var(--accent-glow);
-    transform: scale(1.03);
+.tierLabel {
+    display: block;
+    font-family: var(--font-heading-tc);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
 }
 
-.highlighted:hover {
-    transform: scale(1.03) translateY(-4px);
+.tierName {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    color: var(--white-50);
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-.popularBadge {
+.badge {
     position: absolute;
-    top: -14px;
+    top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 6px 20px;
+    padding: 4px 14px;
     background: linear-gradient(135deg, var(--accent), var(--accent-light));
     color: var(--white);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     border-radius: 50px;
     white-space: nowrap;
 }
 
-.planEmoji {
-    font-size: 2.2rem;
-    margin-bottom: 12px;
+/* Body cells */
+.featureCell {
+    padding: 14px 16px;
+    color: var(--white-70);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--white-10);
+    text-align: left;
+    white-space: nowrap;
 }
 
-.planTier {
-    font-family: var(--font-heading-tc);
-    font-size: 1.2rem;
+.valueCell {
+    padding: 14px 12px;
+    text-align: center;
+    color: var(--white-70);
+    border-bottom: 1px solid var(--white-10);
+    font-size: 0.9rem;
+}
+
+.colHighlight {
+    background: var(--accent-glow);
+}
+
+.check {
+    color: var(--green);
     font-weight: 700;
-    color: var(--white);
-    margin-bottom: 4px;
+    font-size: 1.1rem;
 }
 
-.planDesc {
-    font-size: 0.85rem;
-    color: var(--white-50);
-    margin-bottom: 24px;
+.dash {
+    color: var(--white-20);
+    font-size: 1.1rem;
 }
 
-.planPrice {
-    margin-bottom: 28px;
+/* Price row */
+.priceRow td {
+    border-bottom: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.priceAmount {
+.priceCell {
+    text-align: center;
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: var(--white);
 }
 
-.priceSuffix {
-    font-size: 0.9rem;
-    color: var(--white-50);
-    margin-left: 4px;
+.priceRow .colHighlight {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-.featureList {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 28px;
-    flex-grow: 1;
+/* CTA row */
+.ctaRow {
+    text-align: center;
+    margin-top: 36px;
 }
 
-.featureItem {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 8px 0;
-    font-size: 0.9rem;
-    color: var(--white-70);
-    line-height: 1.5;
-}
-
-.checkmark {
-    color: var(--green);
-    font-weight: 700;
-    flex-shrink: 0;
-}
-
-.planBtn {
-    width: 100%;
-    justify-content: center;
-    margin-top: auto;
-}
-
+/* Footnote */
 .footnote {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 24px;
     font-size: 0.85rem;
     color: var(--white-50);
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
-.footnote a {
-    color: var(--accent);
+/* ─── Mobile Cards (hidden on desktop) ─── */
+.mobileCards {
+    display: none;
 }
 
+.mobileCard {
+    position: relative;
+    background: var(--navy-light);
+    border: 1px solid var(--white-10);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.mobileCardHighlight {
+    border-color: var(--accent);
+    background: linear-gradient(180deg, var(--accent-glow), var(--navy-light));
+}
+
+.mobileCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--white-10);
+}
+
+.mobileLabel {
+    font-family: var(--font-heading-tc);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-right: 8px;
+}
+
+.mobileName {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    color: var(--white-50);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.mobilePrice {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.mobileFeatures {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobileFeatureItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    font-size: 0.88rem;
+    color: var(--white-70);
+}
+
+.mobileBadge {
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    padding: 4px 14px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+/* ─── Responsive ─── */
 @media (max-width: 768px) {
     .header {
-        margin-bottom: 32px;
+        margin-bottom: 28px;
     }
 
-    .grid {
-        grid-template-columns: 1fr;
+    .tableWrap {
+        display: none;
+    }
+
+    .mobileCards {
+        display: block;
         max-width: 400px;
+        margin: 0 auto;
     }
 
-    .planCard {
-        padding: 28px 20px 24px;
-    }
-
-    .highlighted {
-        transform: none;
-    }
-
-    .highlighted:hover {
-        transform: translateY(-4px);
+    .ctaRow {
+        margin-top: 24px;
     }
 
     .footnote {
-        margin-top: 28px;
+        margin-top: 20px;
+        font-size: 0.8rem;
     }
 }

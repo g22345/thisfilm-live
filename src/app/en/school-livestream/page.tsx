@@ -1,22 +1,21 @@
 'use client';
 
 import { useEffect } from 'react';
-import Hero from '@/components/Hero';
-import PainPoints from '@/components/PainPoints';
-import Services from '@/components/Services';
-import WhyUs from '@/components/WhyUs';
-import Process from '@/components/Process';
-import Pricing from '@/components/Pricing';
-import Partners from '@/components/Partners';
-import Trust from '@/components/Trust';
-import FAQ from '@/components/FAQ';
-import Footer from '@/components/Footer';
-import TrustBadges from '@/components/TrustBadges';
+import HeroEn from '@/components/en/HeroEn';
+import TrustBadgesEn from '@/components/en/TrustBadgesEn';
+import PainPointsEn from '@/components/en/PainPointsEn';
+import ServicesEn from '@/components/en/ServicesEn';
+import WhyUsEn from '@/components/en/WhyUsEn';
+import ProcessEn from '@/components/en/ProcessEn';
+import PricingEn from '@/components/en/PricingEn';
+import PartnersEn from '@/components/en/PartnersEn';
+import TrustEn from '@/components/en/TrustEn';
+import FAQEn from '@/components/en/FAQEn';
+import FooterEn from '@/components/en/FooterEn';
 import LangSwitch from '@/components/LangSwitch';
 
-export default function SchoolLivestream() {
+export default function EnSchoolLivestream() {
     useEffect(() => {
-        // Intersection Observer for fade-in animations
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -38,25 +37,25 @@ export default function SchoolLivestream() {
     return (
         <main>
             <LangSwitch />
-            <Hero />
-            <TrustBadges />
+            <HeroEn />
+            <TrustBadgesEn />
             <div className="section-divider" />
-            <PainPoints />
+            <PainPointsEn />
             <div className="section-divider" />
-            <Services />
+            <ServicesEn />
             <div className="section-divider" />
-            <WhyUs />
+            <WhyUsEn />
             <div className="section-divider" />
-            <Process />
+            <ProcessEn />
             <div className="section-divider" />
-            <Pricing />
+            <PricingEn />
             <div className="section-divider" />
-            <Partners />
+            <PartnersEn />
             <div className="section-divider" />
-            <Trust />
+            <TrustEn />
             <div className="section-divider" />
-            <FAQ />
-            <Footer />
+            <FAQEn />
+            <FooterEn />
         </main>
     );
 }

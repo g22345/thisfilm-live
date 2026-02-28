@@ -1,25 +1,25 @@
 'use client';
 
-import styles from './Trust.module.css';
+import styles from '../Trust.module.css';
 
 const stats = [
-    { value: '20+', label: '體育總會合作' },
-    { value: '100+', label: '場直播經驗' },
-    { value: '99.9%', label: '直播穩定度' },
-    { value: '50間', label: '學校及機構信賴' },
+    { value: '20+', label: 'Sports Federation Partners' },
+    { value: '100+', label: 'Events Livestreamed' },
+    { value: '99.9%', label: 'Stream Uptime' },
+    { value: '50+', label: 'Schools & Organisations' },
 ];
 
-export default function Trust() {
+export default function TrustEn() {
     return (
         <section className={`section ${styles.trust}`} id="trust">
             <div className="container">
                 <div className={styles.header}>
-                    <span className="section-label">實力見證</span>
+                    <span className="section-label">Track Record</span>
                     <h2 className="section-title">
-                        <span className="highlight">有豐富直播經驗</span>
+                        <span className="highlight">Proven livestream experience</span>
                     </h2>
                     <p className="section-subtitle" style={{ margin: '0 auto' }}>
-                        從體育總會到學界賽事，我們的直播團隊已累積大量實戰經驗，深得合作夥伴信賴。
+                        From sports federations to interschool competitions, our crew has deep hands-on experience and the trust of our partners.
                     </p>
                 </div>
 
@@ -35,24 +35,25 @@ export default function Trust() {
                 <div className={styles.testimonial}>
                     <div className={styles.quoteIcon}>&ldquo;</div>
                     <blockquote className={styles.quote}>
-                        無論是體育總會的比賽還是學校活動，他們都能穩定地透過 YouTube 直播。
-                        家長們反應非常好，不少海外家長都表示感謝，加深了信任。
+                        Whether it&apos;s federation tournaments or school events, they deliver
+                        reliable YouTube livestreams every time. Parents — especially those overseas —
+                        are always grateful, and it builds real trust.
                     </blockquote>
                     <div className={styles.quoteAuthor}>
-                        <span className={styles.authorName}>體育總會合作夥伴</span>
+                        <span className={styles.authorName}>Sports Federation Partner</span>
                     </div>
                 </div>
 
                 <div className={styles.ctaWrap}>
-                    <p className={styles.ctaText}>如欲了解我們如何為貴校度身訂造直播方案，歡迎聯繫。</p>
-                    <p className={styles.urgency}>2025 畢業禮檔期快將額滿，立即查詢預約</p>
+                    <p className={styles.ctaText}>Want to learn how we can tailor a livestream plan for your school? Get in touch.</p>
+                    <p className={styles.urgency}>2025 graduation slots filling fast — enquire now to secure your date</p>
                     <a
-                        href="https://wa.me/85270483360?text=你好，我想查詢畢業禮直播服務"
+                        href="https://wa.me/85270483360?text=Hi, I'd like to enquire about graduation livestream services"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-cta"
                     >
-                        免費諮詢直播方案
+                        Free Livestream Consultation
                     </a>
                 </div>
             </div>

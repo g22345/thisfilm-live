@@ -1,31 +1,31 @@
 'use client';
 
-import styles from './Pricing.module.css';
+import styles from '../Pricing.module.css';
 
 const tiers = [
-    { name: 'Lite', label: '輕量版', price: 'HK$3,800起', highlight: false },
-    { name: 'Standard', label: '標準版', price: 'HK$6,800起', highlight: true },
-    { name: 'Premium', label: '旗艦版', price: 'HK$9,800起', highlight: false },
+    { name: 'Lite', price: 'HK$3,800+', highlight: false },
+    { name: 'Standard', price: 'HK$6,800+', highlight: true },
+    { name: 'Premium', price: 'HK$9,800+', highlight: false },
 ];
 
 const features = [
-    { label: '時數', values: ['最長 2 小時', '最長 3 小時', '最長 3 小時'] },
-    { label: '家長即時收看', values: [true, true, true] },
-    { label: '雙機多角度', values: [false, true, true] },
-    { label: '專業收音', values: [false, true, true] },
-    { label: '圖文包裝', values: [false, false, true] },
-    { label: '完整錄影保存', values: [false, false, true] },
-    { label: '精華剪輯（宣傳/收生用）', values: [false, false, true] },
+    { label: 'Duration', values: ['Up to 2 hrs', 'Up to 3 hrs', 'Up to 3 hrs'] },
+    { label: 'Parent Live Viewing', values: [true, true, true] },
+    { label: 'Multi-Camera', values: [false, true, true] },
+    { label: 'Professional Audio', values: [false, true, true] },
+    { label: 'Subtitle Overlay', values: [false, false, true] },
+    { label: 'Full Recording', values: [false, false, true] },
+    { label: 'Highlight Reel (Admissions/Promo)', values: [false, false, true] },
 ];
 
-export default function Pricing() {
+export default function PricingEn() {
     return (
         <section className={`section ${styles.pricing}`} id="pricing">
             <div className="container">
                 <div className={styles.header}>
-                    <span className="section-label">服務方案</span>
+                    <span className="section-label">Packages</span>
                     <h2 className="section-title">
-                        選擇最適合的<span className="highlight">直播方案</span>
+                        Choose the right <span className="highlight">livestream plan</span>
                     </h2>
                 </div>
 
@@ -40,9 +40,8 @@ export default function Pricing() {
                                         key={i}
                                         className={`${styles.tierHeader} ${t.highlight ? styles.tierHighlight : ''}`}
                                     >
-                                        {t.highlight && <span className={styles.badge}>最受歡迎</span>}
-                                        <span className={styles.tierLabel}>{t.label}</span>
-                                        <span className={styles.tierName}>{t.name}</span>
+                                        {t.highlight && <span className={styles.badge}>Most Popular</span>}
+                                        <span className={styles.tierLabel}>{t.name}</span>
                                     </th>
                                 ))}
                             </tr>
@@ -70,7 +69,7 @@ export default function Pricing() {
                                 </tr>
                             ))}
                             <tr className={styles.priceRow}>
-                                <td className={styles.featureCell}>價錢</td>
+                                <td className={styles.featureCell}>Price</td>
                                 {tiers.map((t, i) => (
                                     <td
                                         key={i}
@@ -90,8 +89,7 @@ export default function Pricing() {
                         <div key={i} className={`${styles.mobileCard} ${t.highlight ? styles.mobileCardHighlight : ''}`}>
                             <div className={styles.mobileCardHeader}>
                                 <div>
-                                    <span className={styles.mobileLabel}>{t.label}</span>
-                                    <span className={styles.mobileName}>{t.name}</span>
+                                    <span className={styles.mobileLabel}>{t.name}</span>
                                 </div>
                                 <span className={styles.mobilePrice}>{t.price}</span>
                             </div>
@@ -102,12 +100,12 @@ export default function Pricing() {
                                     return (
                                         <li key={j} className={styles.mobileFeatureItem}>
                                             <span className={styles.check}>✓</span>
-                                            {typeof v === 'string' ? `${f.label}：${v}` : f.label}
+                                            {typeof v === 'string' ? `${f.label}: ${v}` : f.label}
                                         </li>
                                     );
                                 })}
                             </ul>
-                            {t.highlight && <span className={styles.mobileBadge}>最受歡迎</span>}
+                            {t.highlight && <span className={styles.mobileBadge}>Most Popular</span>}
                         </div>
                     ))}
                 </div>
@@ -115,17 +113,17 @@ export default function Pricing() {
                 {/* CTA */}
                 <div className={styles.ctaRow}>
                     <a
-                        href="https://wa.me/85270483360?text=你好，我想了解直播服務方案"
+                        href="https://wa.me/85270483360?text=Hi, I'd like to learn about your livestream packages"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-cta"
                     >
-                        WhatsApp 免費諮詢
+                        WhatsApp Free Consultation
                     </a>
                 </div>
 
                 <p className={styles.footnote}>
-                    所有方案均包含 YouTube 直播，家長可即時收看。需要客製化？WhatsApp 免費諮詢。
+                    All plans include YouTube livestream for real-time parent viewing. Need a custom solution? WhatsApp us for a free consultation.
                 </p>
             </div>
         </section>

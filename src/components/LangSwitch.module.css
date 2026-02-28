@@ -1,0 +1,46 @@
+.switch {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.switch:hover {
+    background: rgba(0, 188, 212, 0.25);
+    border-color: rgba(0, 188, 212, 0.4);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.switch svg {
+    opacity: 0.7;
+}
+
+.switch:hover svg {
+    opacity: 1;
+}
+
+@media (max-width: 640px) {
+    .switch {
+        top: 12px;
+        right: 12px;
+        padding: 6px 12px;
+        font-size: 0.78rem;
+    }
+}
