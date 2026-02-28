@@ -1,0 +1,140 @@
+.section {
+    background: var(--navy-light);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Last 2 items – center them */
+.grid>div:nth-child(4),
+.grid>div:nth-child(5) {
+    grid-column: span 1;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    cursor: col-resize;
+    user-select: none;
+    touch-action: none;
+    border: 1px solid var(--white-10);
+}
+
+.side {
+    position: absolute;
+    inset: 0;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pEmoji {
+    font-size: 2.5rem;
+}
+
+.pLabel {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--white-50);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    z-index: 10;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.handleLine {
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--white);
+    transform: translateX(-50%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.handleThumb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+}
+
+.name {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 16px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 50px;
+    z-index: 5;
+    white-space: nowrap;
+}
+
+.bottomLine {
+    text-align: center;
+    margin-top: 48px;
+    font-family: var(--font-heading-tc);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 32px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 16px;
+    }
+
+    .bottomLine {
+        margin-top: 32px;
+        font-size: 1.05rem;
+    }
+}

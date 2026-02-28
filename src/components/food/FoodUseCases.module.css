@@ -1,0 +1,65 @@
+.useCases {
+    background: var(--navy);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 28px;
+    background: var(--navy-light);
+    border: 1px solid var(--white-10);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    min-width: 220px;
+    flex: 0 1 auto;
+}
+
+.item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 16px var(--accent-glow);
+    transform: translateY(-2px);
+}
+
+.emoji {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+.name {
+    font-family: var(--font-heading-tc);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 32px;
+    }
+
+    .grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .item {
+        min-width: auto;
+        padding: 16px 20px;
+    }
+}

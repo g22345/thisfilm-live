@@ -1,0 +1,226 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy);
+    overflow: hidden;
+}
+
+.bgOverlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(46, 134, 171, 0.08) 0%, transparent 60%);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding: 100px 24px 80px;
+}
+
+.tagline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(46, 134, 171, 0.2);
+    border-radius: 6px;
+    color: var(--accent-light);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 36px;
+    letter-spacing: 0.5px;
+}
+
+.headline {
+    font-family: var(--font-heading-tc);
+    font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.3;
+    margin-bottom: 28px;
+}
+
+.accentText {
+    color: var(--gold);
+}
+
+.subheadline {
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
+    color: var(--white-70);
+    max-width: 520px;
+    margin: 0 auto 44px;
+    line-height: 1.9;
+}
+
+.ctas {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+/* ---- Before/After Slider ---- */
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    cursor: col-resize;
+    user-select: none;
+    touch-action: none;
+    border: 1px solid var(--white-10);
+}
+
+.sliderAfter,
+.sliderBefore {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.sliderBefore {
+    z-index: 2;
+    border-right: none;
+}
+
+.sliderImagePlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderBefore .sliderImagePlaceholder {
+    /* Make inner image full-width regardless of clip */
+    min-width: 640px;
+}
+
+.placeholderContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.placeholderEmoji {
+    font-size: 3rem;
+}
+
+.placeholderLabel {
+    font-size: 0.9rem;
+    color: var(--white-70);
+    font-weight: 500;
+}
+
+.sliderLabel {
+    position: absolute;
+    top: 16px;
+    padding: 4px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 5;
+}
+
+.sliderHandle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    z-index: 10;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.sliderLine {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--white);
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.sliderThumb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.scrollLine {
+    width: 1px;
+    height: 36px;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+    animation: scrollPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 100px 16px 60px;
+    }
+
+    .sliderContainer {
+        max-width: 100%;
+    }
+
+    .sliderBefore .sliderImagePlaceholder {
+        min-width: 100vw;
+    }
+
+    .placeholderEmoji {
+        font-size: 2rem;
+    }
+
+    .placeholderLabel {
+        font-size: 0.8rem;
+    }
+}

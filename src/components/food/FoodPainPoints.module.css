@@ -1,0 +1,103 @@
+.painPoints {
+    background: var(--navy);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Last 2 cards centered on desktop */
+.grid .card:nth-child(4),
+.grid .card:nth-child(5) {
+    grid-column: span 1;
+}
+
+/* Center the last row with 2 items */
+.grid::after {
+    content: '';
+    grid-column: span 1;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.iconWrap {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold-glow);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
+.cardTitle {
+    font-family: var(--font-heading-tc);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.cardDesc {
+    font-size: 0.92rem;
+    color: var(--white-70);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 32px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .iconWrap {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 14px;
+    }
+
+    .cardTitle {
+        font-size: 1.05rem;
+        margin-bottom: 8px;
+    }
+
+    .cardDesc {
+        font-size: 0.88rem;
+        line-height: 1.65;
+    }
+}

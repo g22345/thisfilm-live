@@ -3,10 +3,10 @@
 import styles from './Trust.module.css';
 
 const stats = [
-    { value: '20+', label: '體育總會合作' },
-    { value: '100+', label: '場直播完成' },
-    { value: '99.9%', label: '直播穩定率' },
-    { value: '50萬+', label: '累計觀看人次' },
+    { value: '20+', label: '體育總�??��?' },
+    { value: '100+', label: '?�直?��??? },
+    { value: '99.9%', label: '?�播穩�??? },
+    { value: '50??', label: '累�?觀?�人�? },
 ];
 
 export default function Trust() {
@@ -14,12 +14,12 @@ export default function Trust() {
         <section className={`section ${styles.trust}`} id="trust">
             <div className="container">
                 <div className={styles.header}>
-                    <span className="section-label">實力見證</span>
+                    <span className="section-label">實�?見�?</span>
                     <h2 className="section-title">
-                        <span className="highlight">有豐富直播經驗</span>
+                        <span className="highlight">?��?富直?��?�?/span>
                     </h2>
                     <p className="section-subtitle" style={{ margin: '0 auto' }}>
-                        從體育總會到學界賽事，我們的直播團隊已累積大量實戰經驗，深得合作夥伴信賴。
+                        從�??�總?�到學�?賽�?，�??��??�播?��?已累積大?�實?��?驗�?深�??��?夥伴信賴??
                     </p>
                 </div>
 
@@ -35,24 +35,24 @@ export default function Trust() {
                 <div className={styles.testimonial}>
                     <div className={styles.quoteIcon}>&ldquo;</div>
                     <blockquote className={styles.quote}>
-                        他們的直播質素非常高，畫面清晰、切換流暢，完全不像一般的 YouTube 直播。
-                        家長反應十分正面，不少海外親屬亦表示終於可以即時觀看比賽。
+                        他們�??�播質�??�常高�??�面清晰?��??��??��?完全不�?一?��? YouTube ?�播??
+                        家長?��??��?�?��，�?少海外親屬亦表示終於?�以?��?觀?��?賽�?
                     </blockquote>
                     <div className={styles.quoteAuthor}>
-                        <span className={styles.authorName}>— 體育總會合作夥伴</span>
+                        <span className={styles.authorName}>??體育總�??��?夥伴</span>
                     </div>
                 </div>
 
                 <div className={styles.ctaWrap}>
-                    <p className={styles.ctaText}>如欲了解我們如何為貴校度身訂造直播方案，歡迎聯繫。</p>
-                    <p className={styles.urgency}>2025 畢業禮檔期快將額滿，立即查詢預約</p>
+                    <p className={styles.ctaText}>如欲了解?�們�?何為貴校度身訂造直?�方案�?歡�??�繫??/p>
+                    <p className={styles.urgency}>2025 ?�業禮�??�快將�?滿�?立即?�詢?��?</p>
                     <a
-                        href="https://wa.me/85200000000?text=你好，我想查詢畢業禮直播服務"
+                        href="https://wa.me/85270483360?text=你好，�??�查詢畢業禮?�播?��?"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-cta"
                     >
-                        免費諮詢直播方案
+                        ?�費諮詢?�播?��?
                     </a>
                 </div>
             </div>
