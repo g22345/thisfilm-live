@@ -16,6 +16,7 @@ const features = [
     { label: 'Subtitle Overlay', values: [false, false, true] },
     { label: 'Full Recording', values: [false, false, true] },
     { label: 'Highlight Reel (Admissions/Promo)', values: [false, false, true] },
+    { label: 'Event Photography', values: [false, false, true] },
 ];
 
 export default function PricingEn() {

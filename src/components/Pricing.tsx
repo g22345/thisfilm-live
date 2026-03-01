@@ -16,6 +16,7 @@ const features = [
     { label: '圖文包裝', values: [false, false, true] },
     { label: '完整錄影保存', values: [false, false, true] },
     { label: '精華剪輯（宣傳/收生用）', values: [false, false, true] },
+    { label: '活動硬照拍攝', values: [false, false, true] },
 ];
 
 export default function Pricing() {

@@ -1,0 +1,118 @@
+.section {
+    background: var(--navy);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.cardBefore {
+    background: var(--navy-light);
+    border: 1px solid var(--white-10);
+}
+
+.cardAfter {
+    background: linear-gradient(180deg, var(--accent-glow), var(--navy-light));
+    border: 1px solid var(--accent);
+}
+
+.imageWrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px 8px;
+}
+
+.labelIcon {
+    font-size: 1.3rem;
+}
+
+.labelText {
+    font-family: var(--font-heading-tc);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.painList,
+.proList {
+    list-style: none;
+    padding: 0 20px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.painList li {
+    font-size: 0.88rem;
+    color: var(--white-50);
+    padding-left: 20px;
+    position: relative;
+}
+
+.painList li::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.proList li {
+    font-size: 0.88rem;
+    color: var(--white-70);
+    padding-left: 20px;
+    position: relative;
+}
+
+.proList li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 28px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 400px;
+    }
+
+    .labelText {
+        font-size: 1rem;
+    }
+}

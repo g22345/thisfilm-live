@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import HeroEn from '@/components/en/HeroEn';
 import TrustBadgesEn from '@/components/en/TrustBadgesEn';
 import PainPointsEn from '@/components/en/PainPointsEn';
+import BeforeAfterEn from '@/components/en/BeforeAfterEn';
 import ServicesEn from '@/components/en/ServicesEn';
 import WhyUsEn from '@/components/en/WhyUsEn';
 import ProcessEn from '@/components/en/ProcessEn';
@@ -41,6 +42,8 @@ export default function EnSchoolLivestream() {
             <TrustBadgesEn />
             <div className="section-divider" />
             <PainPointsEn />
+            <div className="section-divider" />
+            <BeforeAfterEn />
             <div className="section-divider" />
             <ServicesEn />
             <div className="section-divider" />

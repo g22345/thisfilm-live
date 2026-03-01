@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import PainPoints from '@/components/PainPoints';
+import BeforeAfter from '@/components/BeforeAfter';
 import Services from '@/components/Services';
 import WhyUs from '@/components/WhyUs';
 import Process from '@/components/Process';
@@ -42,6 +43,8 @@ export default function SchoolLivestream() {
             <TrustBadges />
             <div className="section-divider" />
             <PainPoints />
+            <div className="section-divider" />
+            <BeforeAfter />
             <div className="section-divider" />
             <Services />
             <div className="section-divider" />
