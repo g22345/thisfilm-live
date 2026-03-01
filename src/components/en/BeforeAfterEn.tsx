@@ -53,7 +53,7 @@ export default function BeforeAfterEn() {
                         <ul className={styles.proList}>
                             <li>Multi-camera HD footage</li>
                             <li>Professional audio throughout</li>
-                            <li>Overseas parents watch live</li>
+                            <li>All parents watch live, replay anytime</li>
                         </ul>
                     </div>
                 </div>

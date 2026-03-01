@@ -53,7 +53,7 @@ export default function BeforeAfter() {
                         <ul className={styles.proList}>
                             <li>多機位高清畫面</li>
                             <li>全程專業收音</li>
-                            <li>海外家長即時收看</li>
+                            <li>所有家長即時收看，隨時重播</li>
                         </ul>
                     </div>
                 </div>
