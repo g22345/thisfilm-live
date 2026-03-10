@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // TODO: 換成你嘅 GA4 Measurement ID
+const GA_MEASUREMENT_ID = "G-Q93LERT5T8";
 
 export default function GoogleAnalytics() {
     if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === "G-XXXXXXXXXX") {
